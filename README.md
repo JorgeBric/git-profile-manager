@@ -1,4 +1,4 @@
-# 👨🏻‍🚀 Jorge’s Git Profile Manager (Interactive Git Bash Prompt)
+# 👨🏻‍🚀 Git Profile Manager (Interactive Git Bash Prompt)
 
 > A smart and beginner-friendly Bash profile script to manage multiple Git identities, auto-load SSH keys, and jump into your projects — all from one beautiful terminal experience.
 
