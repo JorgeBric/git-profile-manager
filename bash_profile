@@ -7,7 +7,7 @@
 # -----------------------------------------------------
 # Version: 1.1 – Jorge's Git Prompt Setup
 # Updated: 2025-04-20
-# Comments: Improves project folder management and confirmation message before switching accounts
+# Comments: Improves project folder management and confirmation message before switching accounts. Commit tested.
 # -----------------------------------------------------
 
 # ----------------------------------------------------
