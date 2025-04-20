@@ -99,8 +99,7 @@ Hello, [User Name]. What a beautiful Sunday!!! 🐢
 3) ➕ Create new project folder
 ```
 
-## 🛣️ In case you want to change the project in the current account,
-simply type and run: 
+## 🛣️ In case you want to change the project in the current account, type and run: 
 
 ```bash
 select_project
@@ -117,16 +116,6 @@ If you have uncommitted changes and try to switch projects, it will warn you:
 ❗ Switch projects anyway? (y/n):
 ```
 
----
-
-## 💡 Handy Aliases
-
-Add to your `.bash_profile` (optional):
-```bash
-alias personal='git_set_personal'
-alias work='git_set_work'
-alias choose-project='select_project "$(pwd)"'
-```
 
 ---
 
