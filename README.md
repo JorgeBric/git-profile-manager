@@ -129,7 +129,7 @@ If you have uncommitted changes and try to switch projects, it will warn you:
 
 ---
 
-## 🙌 Author
+## 😎 Author
 
 **Jorge Briceño**
 jorgeebricenom@gmail.com  
