@@ -144,7 +144,6 @@ set_git_prompt
 function select_project {
   local GITHUB_ROOT="${1:-$PWD}"  # Use current directory if no argument provided
 
-  shopt -s nullglob
   local project_dirs=("$GITHUB_ROOT"/*/)
   shopt -u nullglob
 
@@ -158,9 +157,18 @@ function select_project {
 
   echo "📁 Detected base GitHub folder: $GITHUB_ROOT"
   echo "🗃️  Let's choose a project (or skip)..."
+  echo "0) ✅ Exit"
 
   local PS3="Enter your choice: "
+
   select project in "${options[@]}"; do
+
+    # ✅ Allow 0 to exit immediately
+    if [[ "$REPLY" == "0" ]]; then
+      echo "✅ Exiting project selection."
+      break
+    fi
+
     case "$project" in
       "❌ No project - stay here")
         echo "📌 You will continue without selecting a project."
@@ -168,6 +176,7 @@ function select_project {
         echo "    select_project \"$GITHUB_ROOT\""
         break
         ;;
+
       "➕ Create new project folder")
         read -rp "📁 Enter the name for your new project folder: " newproj
         if [[ -n "$newproj" ]]; then
@@ -179,9 +188,11 @@ function select_project {
         fi
         break
         ;;
+
       "")
         echo "⚠️ Invalid selection. Try again."
         ;;
+
       *)
         # 🧪 Git dirty check before switching
         if git rev-parse --is-inside-work-tree &>/dev/null; then
