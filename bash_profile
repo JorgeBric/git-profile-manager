@@ -585,5 +585,6 @@ projects() {
 
 
 
+# Set aliases - shortcuts
 alias ps='projects'
-
+alias am='account-menu'
