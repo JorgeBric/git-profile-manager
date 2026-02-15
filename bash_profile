@@ -310,3 +310,13 @@ done
 #   https://waterlan.home.xs4all.nl/dos2unix.html
 
 
+# ----------------------------------------------------
+# 6️⃣ Convenience Commands
+# ----------------------------------------------------
+
+projects() { select_project; }
+alias ps='projects'
+
+
+
+
