@@ -1,0 +1,33 @@
+# =============================================================
+# Git Profile Manager — .gitignore
+# =============================================================
+# SSH keys and account config live OUTSIDE this repo:
+#   ~/.ssh/                          ← SSH keys (never in repo)
+#   ~/.git-profile-manager/          ← account config (never in repo)
+#
+# This file protects against accidentally placing credentials
+# inside the repo folder.
+# =============================================================
+
+# Environment / secrets
+*.env
+*.env.*
+*.secret
+*.secrets
+
+# Private config overrides
+config.local.sh
+*.local.sh
+
+# SSH / certificates
+*.pem
+*.key
+*.pub
+*.p12
+*.pfx
+.secrets/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
