@@ -1,3 +1,26 @@
+#!/usr/bin/env bash
+# =============================================================
+# Git Profile Manager — v1.0 (Archive)
+# =============================================================
+# This is the original single-file version, kept for reference.
+#
+# To use this file as a standalone script:
+#
+# 1. Make it executable:
+#    chmod +x bash_profile_v1.sh
+#
+# 2. Source it into your shell (so functions persist):
+#    source ~/path/to/bash_profile_v1.sh
+#
+#    OR add this line to your ~/.bash_profile:
+#    source "/a/COMPANIES/JBRIC CONSULTING/GITHUB/git-profile-manager/bash_profile_v1.sh"
+#
+# Note: Running it directly (./bash_profile_v1.sh) won't work
+# because functions like account-menu and cd commands need to
+# run in your current shell, not a subshell.
+# =============================================================
+
+
 # -----------------------------------------------------
 # Version Control
 # -----------------------------------------------------
